@@ -12,7 +12,7 @@ namespace EmployeePayroll
             //Console.WriteLine(random.NextDouble()); ==> 0.0 - 1.0
             //Console.WriteLine(random.Next(10,20)); ==> 10 - 19
 
-            Console.WriteLine("Choose option\n 1.Check Attendance\n 2.Daily Wage of Employee\n 3.Part time Wage\n 4.Wage using Swtich Case");
+            Console.WriteLine("Choose option\n 1.Check Attendance\n 2.Daily Wage of Employee\n 3.Part time Wage\n 4.Wage for month");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -26,7 +26,7 @@ namespace EmployeePayroll
                     ParttimeWage.PartTimeWage();
                     break;
                 case 4:
-                    SwitchCase.SwitchStatement();
+                    WageForMonth.CalculateWageForMonth();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
